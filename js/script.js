@@ -38,11 +38,11 @@ const displayUserInfo = function (data) {
     const div = document.createElement("div"); //creating new div
     div.classList.add("user-info"); //giving div a class of "user-info"
     //adding figure, image and paragraphs to the new div
-    div.innerHTML =
-    // <figure>
-    //   <img alt="user avatar" src=${data.avatar_url} />
-    // </figure>
-    `<div>
+    div.innerHTML = `
+    <figure>
+      <img alt="user avatar" src=${data.avatar_url} />
+    </figure>
+    <div>
       <p><strong>Name:</strong> ${data.name}</p>
       <p><strong>Bio:</strong> ${data.bio}</p>
       <p><strong>Location:</strong> ${data.location}</p>
